@@ -118,7 +118,7 @@ CSS STRUCTURE:
   --dark-color: #2f2f2f;
   --grey-color: #e2e6ef;
   --heading-color: #111;
-  --body-text-color: #b0b0b0;
+  --body-text-color: #8e8d8b;
   --light-heading-color: #fff;
   --light-background-color: #fff;
   --light-text-color: #afafaf;
@@ -128,7 +128,7 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: "Work Sans", sans-serif;
+  --body-font: "Open Sans", sans-serif;
   --heading-font: 'Inter', sans-serif;
   --secondary-font: "Playfair Display", Georgia, serif;
 }
@@ -139,7 +139,7 @@ CSS STRUCTURE:
 /*----------------------------------------------*/
 body {
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
   color: var(--body-text-color);
   background-image: url("images/noisier.png");
@@ -433,6 +433,10 @@ hr {
 
 /* - Section Padding
 --------------------------------------------------------------*/
+.padding-smart {
+  padding-top: 4em;
+  padding-bottom: 0em;
+}
 .padding-xsmall {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
