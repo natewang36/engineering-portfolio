@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Self-Balancing Seesaw Robot</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" type="text/css" href="assets/icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-5.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/chocolat/css/chocolat.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Work Sans
+:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<div id="overlayer">
+		<span class="loader">
+			<span class="loader-inner"></span>
+		</span>
+	</div>
+
+	<!-- <div class="nav nav-overlay">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#">Home</a></li>
+				<li class="nav__list-item"><a href="styles.html">Styles <span class="badge bg-dark fs-6">PRO</span></a>
+				</li>
+				<li class="nav__list-item"><a href="blog.html">Blog <span class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="portfolio-masonry.html">Portfolio Masonry <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="single-post.html">Single Post <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="single-portfolio.html">Single Portfolio <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="contact.html">Contact us <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="team.html">Our Team <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a
+						href="https://templatesjungle.gumroad.com/l/portfo-bootstrap-5-portfolio-template"
+						class="btn btn-outline-dark px-5 py-3 rounded-pill" target="_blank">Get PRO Version</a></li>
+			</ul>
+		</div>
+	</div> -->
+
+	<header id="header">
+		<div class="header-wrap" data-aos="fade">
+			<div class="main-logo">
+				<a href="index.html"><img src="images/homewhite.png" title="Back to home"></a>
+			</div><!--main-logo-->
+
+			<!-- <nav id="navbar">
+				<input id="menu-toggle" type="checkbox" />
+				<label class="menu-btn" for="menu-toggle">
+					<span></span>
+				</label>
+			</nav> -->
+
+		</div><!--header-wrap-->
+	</header>
+
+	<section class="hero-section jarallax">
+		<img src="images/seesaw/hero.jpeg" class="jarallax-img">
+		<div class="hero-content padding-xlarge">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8 text-center">
+						<div class="post-meta text-white">
+							Fall 2023
+						</div>
+						<h1 class="page-title text-white">Self-Balancing Seesaw Robot</h1>
+						<div class="breadcrumbs">
+							<span class="item"><a href="index.html" class="text-white">Home /</a></span>
+							<span class="item"><a  class="text-white">see-saw</a></span>
+							<br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="padding-small">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="post-content text-black">
+						<blockquote>Assignment: Design a self-balancing robot using IMUs. The robot must rotate freely and be inherently unstable (does not self-balance).</blockquote>
+						<p>For this assignment, my partner and I stepped away from the traditional two-wheeled self-balancing robot, and challenge ourselves in both the mechanical and control areas. We decided on a stationary robot that would shift its center of mass by way of moving a weight along rails. The result was a robot that would oscillate about its pivot point, like a seesaw.</p>
+						<p>Potential applications of a scaled up version of this design include construction equipment or products used for other lifting purposes.</p>
+						<div class="row justify-content-center">
+								<div class="col-md-6">
+									<div class="portfolio-image">
+										<figure>
+											<a href="images/seesaw/trophy.jpeg" class="image-link"><img
+													src="images/seesaw/trophy.jpeg" alt="seesaw robot display" class="img-fluid"></a>
+										</figure>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="portfolio-image">
+										<figure>
+											<a href="images/seesaw/balancing.gif" class="image-link"><img
+													src="images/seesaw/balancing.gif" alt="self balancing gif" class="img-fluid"></a>
+										</figure>
+									</div>
+								</div>
+						</br>
+					</div>
+					<p>Below is a labeled diagram for the components of the robot. The robot was built around two smooth steel rods that we found to use as rails. To actuate the moving of the weight, we designed a belt pulley system powered by a single DC motor (600 rpm) placed directly above the pivot point. The rotating components were all 3D printed, while the base was made out of wood.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/seesaw/diagram.png" class="image-link"><img
+												src="images/seesaw/diagram.png" alt="labeled diagram" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+
+					</br>
+				</div>
+						<p>During the initial brainstorming, one hurdle we had to overcome was how to make the pivot point as frictionless as possible. We considered various methods of geometrically constraining the "seesaw". A single point of contact would have led to almost no friction at all, but there was no frictionless way to constrain it that we could think of. A semi-circular contact point would have constrained the mechanism beautifully, but at the cost of a lot of surface area, and therefore a lot of friction. At last, we decided to use a tradional bearing system, but made sure to hunt down some smooth ones.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/seesaw/pivots.png" class="image-link"><img
+												src="images/seesaw/pivots.png" alt="pivot diagram" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+
+					</br>
+				</div>
+				<p>The initial CAD design is shown below. There were some aspects of the design that were later changed. For example, the DC motor was moved to be below the rails instead of above. This is because the rails were mounted slightly above the pivot point, and mounting the motor below would bring the center of mass slightly closer to the rails, making the system slightly easier to balance. Another design change was the later addition of steel rods as weights. Due to the size of the system, the weights needed to move the center of mass around the pivot point turned out to be a lot heavier than we initially expected.</p>
+				<div class="row justify-content-center">
+					<div class="col-sm-7">
+						<div class="portfolio-image">
+							<figure>
+								<a href="images/seesaw/cad.png" class="image-link"><img
+										src="images/seesaw/cad.png" alt="cad diagram" class="img-fluid"></a>
+							</figure>
+						</div>
+					</div>
+
+				</br>
+				</div>
+				<p>To make the pulley system, we ordered a timing belt and pulley off of McMaster-Carr and designed the weight mount to clamp on the belt on one side while letting the belt pass through the other side freely.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/seesaw/rail.jpg" class="image-link"><img
+												src="images/seesaw/rail.jpg" alt="rail picture" class="img-fluid"></a>
+									</figure>
+								</div>
+								</div>
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/seesaw/slider.gif" class="image-link"><img
+												src="images/seesaw/slider.gif" alt="slider picture" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+					</br>
+				</div>
+				<p>To control this system, we initially implemented a purely proportional (P) control. However, this led to large fluctuations and angular accelerations that the robot was not fast enough to correct for. After adding a derivative (D) control, the PD controller worked a lot better, as it was able to correct itself before losing control with much smaller oscillations. Due to time constraints, we were unable to implement the integral (I) aspect of the control system, which would have improved the balancing even more. A diagram of the code flow is shown below.</p>
+				<div class="row justify-content-center">
+					<div class="col-sm-7">
+						<div class="portfolio-image">
+							<figure>
+								<a href="images/seesaw/code.png" class="image-link"><img
+										src="images/seesaw/code.png" alt="code diagram" class="img-fluid"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<p>As an additional challenge, we decided to integrate a safety mechanism meant to simulate what would be used if this were to be scaled up and used for construction purposes. If a person were to walk underneath one end of the seesaw, the ultrasonic sensor would detect them, and an elastic-powered safety block would be shot into position to protect the human. This release mechanism was made purely out of wood, a simple servo, and a rubber band.</p>
+				<div class="row justify-content-center">
+					<div class="col-sm-7">
+						<div class="portfolio-image">
+							<figure>
+								<a href="images/seesaw/safety1.gif" class="image-link"><img
+										src="images/seesaw/safety1.gif" alt="safety demo 1" class="img-fluid"></a>
+							</figure>
+						</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+					<div class="col-sm-4">
+						<div class="portfolio-image">
+							<figure>
+								<a href="images/seesaw/safety2.gif" class="image-link"><img
+										src="images/seesaw/safety2.gif" alt="safety demo 2" class="img-fluid"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</br>
+		</div>
+
+		</div>
+	</section>
+
+
+	<div id="footer-bottom" class="py-5">
+		<div class="container">
+					<h1><a href="index.html" class = "text-blue">Back to home page</a></br></br>Site developed by Nathan Wang</h1>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="assets/vendor/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
