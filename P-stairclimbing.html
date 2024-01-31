@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stair Climbing Robot</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" type="text/css" href="assets/icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-5.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/chocolat/css/chocolat.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Work Sans
+:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<div id="overlayer">
+		<span class="loader">
+			<span class="loader-inner"></span>
+		</span>
+	</div>
+
+	<!-- <div class="nav nav-overlay">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#">Home</a></li>
+				<li class="nav__list-item"><a href="styles.html">Styles <span class="badge bg-dark fs-6">PRO</span></a>
+				</li>
+				<li class="nav__list-item"><a href="blog.html">Blog <span class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="portfolio-masonry.html">Portfolio Masonry <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="single-post.html">Single Post <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="single-portfolio.html">Single Portfolio <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="contact.html">Contact us <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="team.html">Our Team <span
+							class="badge bg-dark fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a
+						href="https://templatesjungle.gumroad.com/l/portfo-bootstrap-5-portfolio-template"
+						class="btn btn-outline-dark px-5 py-3 rounded-pill" target="_blank">Get PRO Version</a></li>
+			</ul>
+		</div>
+	</div> -->
+
+	<header id="header">
+		<div class="header-wrap" data-aos="fade">
+			<div class="main-logo">
+				<a href="index.html"><img src="images/homewhite.png" title="Back to home"></a>
+			</div><!--main-logo-->
+
+			<!-- <nav id="navbar">
+				<input id="menu-toggle" type="checkbox" />
+				<label class="menu-btn" for="menu-toggle">
+					<span></span>
+				</label>
+			</nav> -->
+
+		</div><!--header-wrap-->
+	</header>
+
+	<section class="hero-section jarallax">
+		<img src="images/stair_climbing/hero.jpeg" class="jarallax-img">
+		<div class="hero-content padding-xlarge">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8 text-center">
+						<div class="post-meta text-white">
+							Fall 2023
+						</div>
+						<h1 class="page-title text-white">Stair Climbing Robot</h1>
+						<div class="breadcrumbs">
+							<span class="item"><a href="index.html" class="text-white">Home /</a></span>
+							<span class="item"><a  class="text-white">stair-climbing-robot</a></span>
+							<br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="padding-small">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="post-content text-black">
+						<blockquote>Assignment: Create a robot that can climb and descend stairs.</blockquote>
+						<p>The final assignment for Advanced Robotics class was to design a robot that was able to climb stairs. The robot had to accomodate for a range of stair heights and depths, but did not have to account for any kind of lip or overhang on the steps.</p>
+						</br>
+						<p>After some deliberation, we decided to go with a planetary gear system that would allow our robot to drive normally on flat ground, while shifting into stair-climbing mode when met with resistance.</p>
+						<p>A proof of concept wheel was fabricated quickly - initially we were thinking of 3D printing gears, but determined that acrylic would be much more time-efficient while still providing enough strength and rigidity (PLA prints deteriorate over time, and carbon fiber prints would be much slower)</p>
+						<p>To transmit rotation into the planetary gear, we decided to key aluminum shafts. This allowed us to easily slip gears on and off the shaft, and design minimal-friction shaft mounts. We utilized a mill and drilled out a channel across long aluminum rods, then cut the rods to lengths as needed.</p>
+						<p>A planed piece of birch wood was used as the base. Custom shaft mounts were attached in each corner to accomodate for the forward and rear shafts. Unfortunately, we were unable to use bearings due to the large size of the shaft and the lack of large bearings available. Our best workaround consisted of mounting acrylic cutouts to wood blocks (the thin acrylic-on-aluminum contact caused much less friction than wood-on-aluminum contact).</p>
+						<p>To actuate the wheels, we used three motors that we had available. For the front shaft, we used a single 12RPM DC motor, and we used a pair of 60RPM DC motors for the back. In order to bring these down to the same speed while also increasing torque, we created acrylic gearboxes that synced the motors to 8RPM. The front gearbox was a simple 12:8 ratio and worked well, but the rear gearbox was 60:8, which led to very tiny gears turning a very large gear. This turned out to be a point of failure during testing, as the small gears would eventually break when met with enough resistance (like stalling on a staircase).</p>
+						<p>The microprocessor used was an ESP32. This was used to control the motors, as well as the handful of sensors we used for our secondary goals. With an ESP32-CAM Module, a 6-axis gyrometer, and a small lidar sensor, we implemented object detection that would cause our robot to slow down if obstacles were obstructing forward motion.</p>
+						</br>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div id="footer-bottom" class="py-5">
+		<div class="container">
+					<h1><a href="index.html" class = "text-blue">Back to home page</a></br></br>Site developed by Nathan Wang</h1>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="assets/vendor/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
