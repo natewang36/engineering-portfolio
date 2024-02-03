@@ -108,15 +108,144 @@
 				<div class="col-md-10 offset-md-1">
 					<div class="post-content text-black">
 						<blockquote>Assignment: Create a robot that can climb and descend stairs.</blockquote>
-						<p>The final assignment for Advanced Robotics class was to design a robot that was able to climb stairs. The robot had to accomodate for a range of stair heights and depths, but did not have to account for any kind of lip or overhang on the steps.</p>
+						<p>The final assignment for Advanced Robotics class was to design a robot that was able to climb stairs. The robot did not have to account for any kind of lip or overhang on the steps.</p>
 						</br>
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/CADandDesign.jpg" class="image-link"><img
+												src="images/stair_climbing/CADandDesign.jpg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
 						<p>After some deliberation, we decided to go with a planetary gear system that would allow our robot to drive normally on flat ground, while shifting into stair-climbing mode when met with resistance.</p>
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/prototype.gif" class="image-link"><img
+												src="images/stair_climbing/prototype.gif" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
 						<p>A proof of concept wheel was fabricated quickly - initially we were thinking of 3D printing gears, but determined that acrylic would be much more time-efficient while still providing enough strength and rigidity (PLA prints deteriorate over time, and carbon fiber prints would be much slower)</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/keyed.jpeg" class="image-link"><img
+												src="images/stair_climbing/keyed.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/plank.gif" class="image-link"><img
+												src="images/stair_climbing/plank.gif" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
 						<p>To transmit rotation into the planetary gear, we decided to key aluminum shafts. This allowed us to easily slip gears on and off the shaft, and design minimal-friction shaft mounts. We utilized a mill and drilled out a channel across long aluminum rods, then cut the rods to lengths as needed.</p>
 						<p>A planed piece of birch wood was used as the base. Custom shaft mounts were attached in each corner to accomodate for the forward and rear shafts. Unfortunately, we were unable to use bearings due to the large size of the shaft and the lack of large bearings available. Our best workaround consisted of mounting acrylic cutouts to wood blocks (the thin acrylic-on-aluminum contact caused much less friction than wood-on-aluminum contact).</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/gearbox.jpeg" class="image-link"><img
+												src="images/stair_climbing/gearbox.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/smallgear.jpeg" class="image-link"><img
+												src="images/stair_climbing/smallgear.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/chipped.jpeg" class="image-link"><img
+												src="images/stair_climbing/chipped.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
 						<p>To actuate the wheels, we used three motors that we had available. For the front shaft, we used a single 12RPM DC motor, and we used a pair of 60RPM DC motors for the back. In order to bring these down to the same speed while also increasing torque, we created acrylic gearboxes that synced the motors to 8RPM. The front gearbox was a simple 12:8 ratio and worked well, but the rear gearbox was 60:8, which led to very tiny gears turning a very large gear. This turned out to be a point of failure during testing, as the small gears would eventually break when met with enough resistance (like stalling on a staircase).</p>
+						<div class="row justify-content-center">
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/electronics.jpeg" class="image-link"><img
+												src="images/stair_climbing/electronics.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
 						<p>The microprocessor used was an ESP32. This was used to control the motors, as well as the handful of sensors we used for our secondary goals. With an ESP32-CAM Module, a 6-axis gyrometer, and a small lidar sensor, we implemented object detection that would cause our robot to slow down if obstacles were obstructing forward motion.</p>
-						</br>
+						<p>As mentioned earlier, the gears for the wheels were cut from 6mm acrylic. In an attempt to increase traction, we printed tires out of TPU filament, which is rubbery and flexible. While this was grippy, it still was not enough. We ended up applying a layer of friction tape on the treads of each tire, and this was able to provide us with enough traction.</p>
+						<p>Initially our plan was to use two Lithium batteries to provide enough power, but testing showed that they weren't enough, and we opted to use a long extension cable instead for the demonstration.</p>
+						<div class="row justify-content-center">
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/climbing.gif" class="image-link"><img
+												src="images/stair_climbing/climbing.gif" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/test.gif" class="image-link"><img
+												src="images/stair_climbing/test.gif" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>Ultimately, our robot was able to climb stairs, albeit with a bit of assistance. We designed our wheel geometry to work around 9-inch stairs, as per our class assignment, but the stair we tested on were 7 inches. This led to the planetary wheel contacting the staircase in undesirable spots.</p>	
+						<div class="row justify-content-center">
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/beauty0.jpg" class="image-link"><img
+												src="images/stair_climbing/beauty0.jpg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/beauty1.jpeg" class="image-link"><img
+												src="images/stair_climbing/beauty1.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/beauty2.jpeg" class="image-link"><img
+												src="images/stair_climbing/beauty2.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/stair_climbing/beauty3.jpeg" class="image-link"><img
+												src="images/stair_climbing/beauty3.jpeg" alt="main" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</br>
 					</div>
 				</div>
 			</div>
