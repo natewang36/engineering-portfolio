@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Auditory Clock</title>
+	<title>Auditory Clock - Nathan C Wang</title>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,8 +109,53 @@
 					<div class="post-content text-black">
 						<blockquote>Assignment: Create a clock that tells the time auditorily or tactilely.</blockquote>
 						<p>The first assignment for my robotics class was to design a clock that would either tell the time using sound or touch. No speakers are allowed, so creativity was a must.</p>
-						
-					</br>
+						<p>My partner and I decided to create an auditory clock, and I was responsible for the physical fabrication. We brainstormed multiple methods to tell the time, and ultimately decided on a 3-sound system.</p>
+						<p>To tell the time, each arm would tap out a sequence. The first arm would signify the hour, the second arm would signify a zero in the minutes, and the third arm would signify the minutes. Using a combination of taps and pauses, the time is communicated. Below are some example times:</p>
+						<p>14:30 = Hour Drum: 1 tap, pause, 4 taps - Minute Drum: 3 taps - Zero Drum: 1 tap</p>
+						<p>07:09 = Hour Drum: 7 tap - Zero Drum: 1 tap - Minute Drum: 9 taps</p>
+						<p>11:38 = Hour Drum: 1 tap, pause, 1 tap - Minute Drum: 3 taps, pause, 8 taps</p>
+						<p>00:01 = Zero Drum, 1 tap, pause, 1 tap - Minute Drum: 1 tap</p>
+						<p>As shown above, the zero drum is critical for telling the differences between times that involve either single digits or multiples of 10.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/auditory_clock/explanation.jpg" class="image-link"><img
+												src="images/auditory_clock/explanation.jpg" alt="explanation" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>Below is the labeled components diagram, as well as the CAD for the triple motor mount. The motors were geometrically constrained in order to not move around while actuating the drumsticks, which were long metal bolts. For the materials of the drums, we used clear acrylic, the base of a plastic coffee cup, and a thin sheet of steel. We also slightly raised the drums to allow sound to escape. These three materials gave off uniquely distinguishable sounds.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/auditory_clock/diagram.jpg" class="image-link"><img
+												src="images/auditory_clock/diagram.jpg" alt="diagram" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>Below is the code flow chart, which details exactly how the time is fetched via wifi, then converted into the tapping system described above.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-7">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/auditory_clock/code.jpg" class="image-link"><img
+												src="images/auditory_clock/code.jpg" alt="code" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>Here is a recorded video demonstration of the project, along with a showing of its "speed up" feature, which allows us to speed up the clock's time by a factor of 120 for demonstration purposes.</p>
+						<div class="row justify-content-center">
+							<div class="col-md-6">
+								<figure>
+									<iframe width="100%" height="400" src="https://www.youtube.com/embed/wNxOWlne2Js?si=pVCXA9bhvO9Zp5pj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</figure>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
