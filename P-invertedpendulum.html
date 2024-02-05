@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Medication Adherence Device - Nathan C Wang</title>
+	<title>Inverted Pendulum - Nathan C Wang</title>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,7 +82,7 @@
 	</header>
 
 	<section class="hero-section jarallax">
-		<img src="images/elemed/hero.jpg" class="jarallax-img">
+		<img src="images/self_balancing_robot1/hero.jpeg" class="jarallax-img">
 		<div class="hero-content padding-xlarge">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -90,10 +90,10 @@
 						<div class="post-meta text-white">
 							Fall 2022
 						</div>
-						<h1 class="page-title text-white">Medication Adherence Device</h1>
+						<h1 class="page-title text-white">Inverted Pendulum Self-Balancing Robot</h1>
 						<div class="breadcrumbs">
 							<span class="item"><a href="index.html" class="text-white">Home /</a></span>
-							<span class="item"><a  class="text-white">medication-adherence-device</a></span>
+							<span class="item"><a  class="text-white">invertedpendulum</a></span>
 							<br><br><br>
 						</div>
 					</div>
@@ -107,59 +107,56 @@
 			<div class="row">
 				<div class="col-md-10 offset-md-1">
 					<div class="post-content text-black">
-						<blockquote>Assignment: Create a routine-based product to assist the elderly in medication adherence.</blockquote>
-						<p>For my senior design project, I worked with two teammates to develop a prototype for EleMed, a small Tufts-based medical research group. In the US, around 75% of the 50+ population take prescription medication. However, around half of these consumers experience difficulty adhering to their daily medication. This may be due to various reasons, such as bad memory, medical illiteracy, or a lack of a consistent schedule. To combat this issue, EleMed is looking to develop a routine-based alert system that triggers when consumers go through a certain part of their daily routine, such as brewing coffee or brushing teeth. This system is meant to be flexible enough to suit various routines for different consumers.</p>
+						<blockquote>Assignment: Create a self-balancing robot</blockquote>
+						<p>The first large project for my ME35: Robotics class was to create a self-balancing robot. We chose to design an inverted pendulum system with a weighted flywheel at the top. This flywheel would generate directional torque that would correct the system from tipping.</p>
+						<p>The hardware was done using CAD and a MarkForged 3D printer and mounted onto a carbon fiber tube. The flywheel was cut out of half-inch aluminum using a water jet. Using a gyroscopic sensor, the mounted Arduino was able to control the flywheel and generate torque to correct orientation.</p>
+						<p>This robot was able to self-balance for a limited time before tipping. This was because the flywheel could only generate torque while accelerating, and once it reached its maximum speed, no more torque could be generated in that direction, and the system would tip. One fix would be to create a heavier flywheel that takes more torque to spin at max speed.</p>
 							<div class="row justify-content-center">
-								<div class="col-sm-7">
+								<div class="col-sm-5">
 									<div class="portfolio-image">
 										<figure>
-											<a href="images/elemed/problem.jpg" class="image-link"><img
-													src="images/elemed/problem.jpg" alt="main" class="img-fluid"></a>
+											<a href="images/self_balancing_robot1/front.jpeg" class="image-link"><img
+													src="images/self_balancing_robot1/front.jpeg" alt="inverted pendulum self balancing robot 1" class="img-fluid"></a>
 										</figure>
 									</div>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-5">
 									<div class="portfolio-image">
 										<figure>
-											<a href="images/elemed/elemed1.jpg" class="image-link"><img
-													src="images/elemed/elemed1.jpg" alt="main" class="img-fluid"></a>
+											<a href="images/self_balancing_robot1/side.jpeg" class="image-link"><img
+													src="images/self_balancing_robot1/side.jpeg" alt="inverted pendulum self balancing robot 2" class="img-fluid"></a>
 										</figure>
 									</div>
 								</div>
-							</div>
-						</br>
-						<p>Our final prototype consisted of a two-part system: the first part was a sensor that would detect a user performing a part of their daily routine, such as brushing their teeth or brewing coffee. This sensor module would then send a signal through a web server. The second part of the system, a pill case dock, would then sound an alert that would only turn off once the user has removed the pill case from the dock and takes their pills.</p>
-						<p>The program flow chart is shown below.</p>
-							<div class="row justify-content-center">
-								<div class="col-sm-7">
+								<div class="col-sm-5">
 									<div class="portfolio-image">
 										<figure>
-											<a href="images/elemed/program.jpg" class="image-link"><img
-													src="images/elemed/program.jpg" alt="program chart" class="img-fluid"></a>
+											<a href="images/self_balancing_robot1/flywheel.jpeg" class="image-link"><img
+													src="images/self_balancing_robot1/flywheel.jpeg" alt="inverted pendulum self balancing robot 3" class="img-fluid"></a>
 										</figure>
 									</div>
 								</div>
-							</div>
-							<p>As a part of the entrepreneurial aspect of this project, we compared our product with other adherence products in the table below.</p>
-							<div class="row justify-content-center">
-								<div class="col-sm-7">
+								<div class="col-sm-5">
 									<div class="portfolio-image">
 										<figure>
-											<a href="images/elemed/bench.jpg" class="image-link"><img
-													src="images/elemed/bench.jpg" alt="benchmark" class="img-fluid"></a>
+											<a href="images/self_balancing_robot1/clamped.jpeg" class="image-link"><img
+													src="images/self_balancing_robot1/clamped.jpeg" alt="inverted pendulum self balancing robot 4" class="img-fluid"></a>
 										</figure>
 									</div>
 								</div>
 							</div>
-							<p>A video demonstration of the product is shown below.</p>
 							<div class="row justify-content-center">
-								<div class="col-lg-8">
-										<figure>
-											<iframe width="100%" height="500" src="https://www.youtube.com/embed/nxaniUSuT90?si=WZEKZhZ5OusEJgqq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-										</figure>
+								<div class="col-md-6">
+									<figure>
+										<iframe width="100%" height="600" src="https://youtube.com/embed/WzrNbg5F4-c?si=qD4m8s1T4ey8E1qV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</figure>
+								</div>
+								<div class="col-md-6">
+									<figure>
+										<iframe width="100%" height="600" src="https://youtube.com/embed/n4B9PxTOmbg?si=tspfM5n0j7y3q-vH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</figure>
 								</div>
 							</div>
-						</br>
 					</div>
 				</div>
 			</div>
