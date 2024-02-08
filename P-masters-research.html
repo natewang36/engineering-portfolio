@@ -138,7 +138,89 @@
 								</div>
 							</div>
 						</div>
-						<p></p>
+						h5>Week 2</h5>
+						<p>We wanted to use the best available material for testing, so I underwent official training for the MarkForged Onyx printers in Bray Labs, and am now able to print there whenever.</p>
+						<p>In order to keep the system as small as possible, the first question I tackled was how to connect to the motor shaft. Initially, I was thinking of directly attaching to the shaft using a thin 1mm hole. However, upon printing tolerance tests, it was quickly apparent that the printer could not create holes exact enough consistently.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/cad_tolerancetester.jpg" class="image-link"><img
+												src="images/masters_research/cad_tolerancetester.jpg" alt="tolerance tester cad" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>With this information, we decided to pivot to using the plastic gear that the motors come with as something for our adapter to grab onto. By using teeth to grab onto the gears, the design allows for high tolerances in fabrication due to the slight elasticity of thin plastic and its ability to fit itself around the gear.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/cad_capstan1.jpg" class="image-link"><img
+												src="images/masters_research/cad_capstan1.jpg" alt="capstan1 cad" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/smallwhitegear.jpeg" class="image-link"><img
+												src="images/masters_research/smallwhitegear.jpeg" alt="small white gear" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/printed_capstan1.jpeg" class="image-link"><img
+												src="images/masters_research/printed_capstan1.jpeg" alt="capstan1 printed" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/capstanattached.jpeg" class="image-link"><img
+												src="images/masters_research/capstanattached.jpeg" alt="capstan1 attached" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							
+						</div>
+						<p>The alignment worked pretty well when the part was printed out. There was definitely merit behind the idea of using teeth for alignment. However, the capstan was able to slip off the gear quite easily. Some creativity would be required to geometrically constrain the capstan onto the motor shaft.</p>
+						<h5>Week 3</h5>
+						<p>Upon realizing that we had a very limited number of the small white gears, we searched for reliable vendors selling something similar in bulk. We did not want to be constrained to using parts that were hard to get. We found a seller on eBay and placed an order, but the shipping estimate was much longer than we had hoped.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/ebay_gear.jpg" class="image-link"><img
+												src="images/masters_research/ebay_gear.jpg" alt="ebay gear seller" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<p>With nothing much left to do for the capstan until the new gears arrived, I decided to work on the motor mount. I wanted to design a mount that would clamp gently onto the motor body while also providing support to the far end of the motor shaft to avoid cantilevering. Leaving room for an encoder installation in the future was also a must.</p>
+						<p>Below is the design I arrived at. The wide base is empty to allow for the motor to be pushed up into the clamp from below, along with the encoder. The hole on the top is designed for a 9mm OD bearing, which will be adapted to in the design of the capstan. Multiple copies of this were printed out, as I wanted to see if there were any materials that worked the best.</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/cad_motorclamp.jpg" class="image-link"><img
+												src="images/masters_research/cad_motorclamp.jpg" alt="motorclamp cad" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="portfolio-image">
+									<figure>
+										<a href="images/masters_research/printed_motorclamp.jpg" class="image-link"><img
+												src="images/masters_research/printed_motorclamp.jpg" alt="printed motor clamp" class="img-fluid"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						The motor fit snugly in the clamp. The design for the base may change in the future as we decide what exactly we want to attach the motor to, but for now the clamping mechanism and shaft support seem to be adequate.
 					</div>
 				</div>
 			</div>
